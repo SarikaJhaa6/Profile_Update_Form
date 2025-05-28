@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_BASE = "http://localhost:5000"; // update if your backend URL differs
+// const API_BASE = "http://localhost:5000"; // update if your backend URL differs
+const API_BASE = "https://profile-update-form-1.onrender.com";
 
 const api = axios.create({
   baseURL: API_BASE,
