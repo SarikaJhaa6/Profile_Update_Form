@@ -1,0 +1,185 @@
+.personal-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .personal-form-card {
+    width: 100%;
+    max-width: 700px;
+    max-height: 75vh;
+    background: rgba(255, 255, 255, 0.4); /* Brighter semi-transparent white */
+    border: 1px solid rgba(255, 255, 255, 0.6); /* Brighter border */
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(255, 255, 255, 0.1), 
+                0 8px 20px rgba(0, 0, 0, 0.2); /* Glow + depth */
+    padding: 2rem;
+    overflow: auto;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: #000; /* Optional: ensure text remains readable */
+}
+
+
+  .form-title {
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    margin-top: 0rem;
+}
+  .form-group {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-icon-wrapper {
+    position: relative;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 1.2rem;
+  }
+  .styled-input, select, input[type="file"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+    border-radius: 8px;
+    border: 1px solid #bbb; /* Slightly darker for contrast */
+    background: linear-gradient(to bottom, #fff, #f1f1f1); /* Light vertical gradient */
+    box-shadow:
+      0 2px 4px rgba(0, 0, 0, 0.1),     /* Outer shadow for lift */
+      inset 0 1px 2px rgba(255, 255, 255, 0.8), /* Inner highlight top */
+      inset 0 -1px 1px rgba(0, 0, 0, 0.05);     /* Inner shadow bottom for depth */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .styled-input:focus, select:focus, input[type="file"]:focus {
+    outline: none;
+    border-color: #66afe9;
+    box-shadow:
+      0 4px 8px rgba(0, 0, 0, 0.15), 
+      inset 0 1px 2px rgba(255, 255, 255, 0.9), 
+      inset 0 -1px 1px rgba(0, 0, 0, 0.08);
+  }
+  
+  
+  .checkbox-label {
+    margin-left: 0.5rem;
+  }
+  
+  .upload-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .preview-img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+    border: 1px solid #ccc;
+  }
+  
+  .error-text {
+    color: red;
+    font-size: 0.875rem;
+  }
+  
+  .success-text {
+    color: green;
+    font-size: 0.875rem;
+  }
+  
+  .info-text {
+    color: #007bff;
+    font-size: 0.875rem;
+  }
+  .form-row {
+    display: flex;
+    gap: 1.5rem; /* space between columns */
+  }
+  
+  .half-width {
+    flex: 1;
+    min-width: 0; /* prevent overflow */
+  }
+    /* Add spacing between label/input/error */
+.form-group label {
+    margin-bottom: 0.4rem;
+    display: inline-block;
+    font-weight: 500;
+  }
+  
+  .error-text,
+  .success-text,
+  .info-text {
+    margin-top: 0.25rem;
+  }
+  
+  .input-icon-wrapper {
+    margin-top: 0.25rem;
+    width: 100%;
+  }
+  
+  .text-end {
+    text-align: right;
+    margin-top: 2rem;
+  }
+  
+  /* Align checkbox with label */
+  .form-group input[type="checkbox"] {
+    vertical-align: middle;
+  }
+  @media (max-width: 600px) {
+    .form-row {
+      flex-direction: column;
+    }
+  
+    .half-width {
+      width: 100%;
+    }
+  
+    .upload-section {
+      align-items: flex-start;
+    }
+  
+    .preview-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .btn-primary {
+    background: linear-gradient(to bottom, #4169e1, #274bd3); /* Royal Blue gradient */
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #1f3bb3, 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+    transform: translateY(0);
+    user-select: none;
+    position: relative;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(to bottom, #5178f2, #355ae0);
+    box-shadow: 0 4px 0 #1f3bb3, 0 6px 12px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+  }
+  
+  .btn-primary:active {
+    background: linear-gradient(to bottom, #274bd3, #1f3bb3);
+    box-shadow: 0 2px 0 #162d8f, 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+  }
+  
+    

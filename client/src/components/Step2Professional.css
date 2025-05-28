@@ -1,0 +1,107 @@
+.professional-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    height: 100%;
+  }
+  
+  .professional-form-card {
+    width: 100%;
+    max-width: 700px;
+    max-height: 75vh;
+    background: rgba(255, 255, 255, 0.4); /* Brighter semi-transparent white */
+    border: 1px solid rgba(255, 255, 255, 0.6); /* Brighter border */
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(255, 255, 255, 0.1), 
+                0 8px 20px rgba(0, 0, 0, 0.2); /* Glow + depth */
+    padding: 2rem;
+    overflow: auto;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: #000; /* Optional: ensure text remains readable */
+  }
+  
+  .professional-form-card h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 0rem;
+  }
+  
+  .professional-form-card label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .professional-form-card input,
+  .professional-form-card select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #bbb; /* Slightly darker for better edge definition */
+    border-radius: 8px;
+    font-size: 1rem;
+    background: linear-gradient(to bottom, #ffffff, #f3f3f3); /* Light gradient for surface texture */
+    box-shadow:
+      0 2px 4px rgba(0, 0, 0, 0.1),         /* Outer shadow */
+      inset 0 1px 2px rgba(255, 255, 255, 0.8), /* Top inner highlight */
+      inset 0 -1px 1px rgba(0, 0, 0, 0.05);     /* Bottom inner shadow */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .professional-form-card input:focus,
+  .professional-form-card select:focus {
+    outline: none;
+    border-color: #66afe9;
+    box-shadow:
+      0 4px 8px rgba(0, 0, 0, 0.15), 
+      inset 0 1px 2px rgba(255, 255, 255, 0.9), 
+      inset 0 -1px 1px rgba(0, 0, 0, 0.08);
+  }
+  
+  
+  .professional-form-card .error-text {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: -0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .professional-form-card .form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .professional-form-card button {
+    flex: 1 1;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #4169e1, #274bd3);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #1f3bb3, 0 7px 14px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease-in-out;
+    transform: translateY(0);
+    user-select: none;
+  }
+  
+  .professional-form-card button:hover {
+    background: linear-gradient(to bottom, #5178f2, #355ae0);
+    box-shadow: 0 3px 0 #1f3bb3, 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1.5px);
+  }
+  
+  .professional-form-card button:active {
+    background: linear-gradient(to bottom, #274bd3, #1f3bb3);
+    box-shadow: 0 2px 0 #162d8f, 0 3px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+  }
+  
